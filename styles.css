@@ -1,7 +1,23 @@
 header {
     background-color: #f7a037;
     display: flex;
+    padding-left: 200px;
 }
+
+header img {
+    position: relative;
+    padding: 0;
+}
+
+main {
+    display: grid;
+}
+
+section {
+    background-color: #8753ea;
+
+}
+
 
 .burger-img {
     background-color: hsla(175, 93, 57, 0.91);  
@@ -11,12 +27,14 @@ header {
 nav {
     display: flex;
 }
+
 .burger-img h1 {
     background-color: #3ed9dc; 
     font-size: 125px;                          
     color: black;                          
     text-align: center;                      
     float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .burger-img img {
@@ -32,9 +50,10 @@ main {
 }
 
 section img {
+    display: flex;
+    float: left;
     width: 100%;
     height: 300px;
-    margin: 0 auto 20px;
     border-radius: 8px;
 }
 
@@ -44,6 +63,7 @@ section img {
     padding-left: 40px;
     cursor: pointer;
     font-size: 18px;
+    margin: 20px;
 }
 
 .custom-checkbox .checkmark {
