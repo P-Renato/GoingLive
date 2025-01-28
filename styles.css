@@ -50,8 +50,6 @@ h1 {
     
 }
 
-
-
 .images {
     background-color: #3ed9dc; 
     width: 20vw;
@@ -64,12 +62,39 @@ main table td {
     padding: 3vw;
 }
 
+fieldset {
+    width: 20vw;
+    height: 15vw;
+}
+
+.choose-your-meet {
+    background-image: url("https://www.thespruceeats.com/thmb/y7grc2sKh9azv1poueHYuEMdKOM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/groundbeefpatty2500-5af0d11f04d1cf0037094dcd.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.choose-your-bun {
+    background-image: url("https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2021-08/beautiful-burger-buns-alt.jpg?itok=RynCVcYt");
+    background-position: center;
+    background-size: 100%;
+}
+
+.choose-your-salad {
+    background-image: url("https://i0.wp.com/blog.blueapron.com/wp-content/uploads/2020/10/types-of-lettuce-for-salad.png?resize=770%2C566&ssl=1");
+    background-position: center;
+    background-size: 100%;
+}
+
+.choose-your-sauce {
+    background-image: url("https://www.browneyedbaker.com/wp-content/uploads/2016/04/burger-sauce-9-600.jpg");
+    background-position: center;
+    background-size: 100%;    
+} 
+
 main {
     display: flex;
     background-color: #8753ea;
 }
-
-
 
 .custom-checkbox {
     position: relative;
