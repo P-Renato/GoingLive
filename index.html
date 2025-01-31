@@ -6,27 +6,41 @@
     <meta name="description" content="Burgerme">
     <title>Burgerme</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="https://www.shutterstock.com/shutterstock/photos/2489716091/display_1500/stock-vector-creative-burger-logo-vector-design-tamplate-2489716091.jpg" type="image/x-icon"></link>
+    <link rel="shortcut icon" href="Logo-BugerMe.png" type="image/x-icon"></link>
 
 
 </head>
 <body>
 
     <header>
-        <table>
-            <td><img id="logo" src="https://www.shutterstock.com/shutterstock/photos/2489716091/display_1500/stock-vector-creative-burger-logo-vector-design-tamplate-2489716091.jpg" width="80px" alt="Image"></td>
-            <td class="header">Home</td>
-            <td class="header">About</td>
-            <td class="header">Contact</td>
-        </table>
+        <div class="header">
+
+            <img id="logo" src="Logo-BugerMe.png" alt="Burgerme-logo">
+
+            <nav class="nav-button">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="icons">
+               
+                <a href="#"><img src="https://www.awicons.com/free-icons/download/system-icons/pleasant-icons-by-harwen-zhang/png/256/Search.png" alt="Search"></a>
+              
+                <a href="#"><img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-3d/512/Shopping-Cart-3d-icon.png" alt="Cart"></a>
+    
+            </div>
+        </div>
+
+        
     </header>
 
-    <nav>
+    <nav class="yourBurger">
 
  
         <h1>Prepare your own burger</h1>
         
-        <img  class="burger-img" src="https://t4.ftcdn.net/jpg/05/61/78/69/360_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg" alt="Image">
+        <!-- <img  class="burger-img" src="https://t4.ftcdn.net/jpg/05/61/78/69/360_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg" alt="Image"> -->
 
     </nav>
    
@@ -40,9 +54,10 @@
                     <fieldset class="choose-your-bun">
                         <legend>Choose your bun:</legend>
 
-                        <hr><br>
                         
-                        <input id="sesame" name="bun" type="checkbox" value="sesame">                            <label for="sesame">Sesame</label>
+                        <input id="sesame" name="bun" type="checkbox" value="sesame">                            
+                        <label for="sesame">Sesame</label>
+                        
                         <input id="brioche" name="bun" type="checkbox" value="brioche">
                         <label for="brioche">Brioche</label>
                     
@@ -59,22 +74,22 @@
 
                         <legend>Choose your meat:</legend>
                      
-                            <hr><br>
+                        
+                        <input id="beef" name="beef-types" type="checkbox" value="beef">
+                        <label for="beef">Beef</label>
             
-                            <input id="beef" name="beef-types" type="checkbox" value="beef">
-                            <label for="beef">Beef</label>
+                        <input id="brisket" name="beef-types" type="checkbox" value="brisket">
+                        <label for="brisket">Brisket</label>
             
-                            <input id="brisket" name="beef-types" type="checkbox" value="brisket">
-                            <label for="brisket">Brisket</label>
+                        <input id="sirloin" name="beef-types" type="checkbox" value="sirloin">
+                        <label for="sirloin">Sirloin</label>
             
-                            <input id="sirloin" name="beef-types" type="checkbox" value="sirloin">
-                            <label for="sirloin">Sirloin</label>
-            
-                            <legend>Rare</legend>
-                            <input id="doneness" name="doneness" type="range" min="0" max="5" step="1">
-                            <legend>Well-done</legend>
+                        <br>
+                        <legend class="input-label">Rare</legend>
+                        <input id="doneness" name="doneness" type="range" min="0" max="5" step="1"> 
+                        <legend  class="input-label">Well-done</legend>
 
-                        </fieldset>
+                    </fieldset>
                     
                 </td>
 
@@ -89,8 +104,6 @@
                         <legend>
                         Choose your salad:
                         </legend>
-
-                        <hr><br>
     
                         <input id="lettuce" name="salad" type="checkbox" value="lettuce">
                         <label for="lettuce">Lettuce</label>
@@ -114,7 +127,6 @@
                         Choose your sauce:
                         </legend>
 
-                        <hr><br>
     
                         <input id="ketchup" name="sauce" type="checkbox" value="ketchup">
                         <label for="ketchup">Ketchup</label>

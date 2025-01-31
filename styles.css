@@ -1,39 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 header {
     background-color: #f7a037;
-    display: inline-block;
+
     width: 100%;
     position: sticky;
     z-index: 1;
-    top: 0;
+    justify-content: center;
 }
 
-nav {
-    background:linear-gradient(
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 5rem;
+    padding: 1rem;
+}
+
+.nav-button, .nav-button a, .icons, .icons a {
+    margin: 1rem;
+    align-items: center;
+
+}
+
+.nav-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.yourBurger {
+    /* background:linear-gradient(
         rgba(27, 253, 46, 0.658),
             rgba(247, 41, 212, 0.747)
-          );
-    width: 100%;
-    display: inline-block;
-    position: relative;
+          ); */
+    background-image: url("https://t4.ftcdn.net/jpg/05/61/78/69/360_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg");
+    background-position: center;
+    background-size: 80vw;
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.icons img {
+    max-width: 5vw;
+    height: 5vh;
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 h1 {
-    background-color: rgba(57, 195, 241, 0.89);
+    padding-left: 3rem;
     font-size: 6rem;                          
-    color: black;                          
+    color: white;                          
     text-align: center;                    
     font-family: Georgia, 'Times New Roman', Times, serif; 
     width: 9vw;
+    text-decoration: underline;
 }
+
+/* .burger-img {
+    width: 18vw;
+    height: 18vw;
+    border-radius: 18vw;
+    padding: 7rem;
+    margin: 4rem;
+} */
+
 
 .menu {
     display: inline-block;
-    background-color: #8753ea;
+    background: linear-gradient(45deg, rgba(248, 41, 41, 0.61), rgba(243, 243, 48, 0.726));
     box-sizing: border-box;
     margin: 0 auto;
     padding: 5rem;
     border: 5px solid;
-    box-sizing: border-box;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .menu td {
@@ -42,29 +96,19 @@ h1 {
 }
 
 
-.burger-img {
-    width: 18vw;
-    height: 18vw;
-    border-radius: 18vw;
-    position: relative;
-    
-}
-
-.images {
-    background-color: #3ed9dc; 
-    width: 20vw;
-    height: 20vw;
-    border-radius: 20vw;
-    margin: 0 auto;
-}
-
-main table td {
+table td {
     padding: 3vw;
+    margin: 1rem;
 }
 
 fieldset {
-    width: 20vw;
+    width: 30vw;
     height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .choose-your-meet {
@@ -91,10 +135,25 @@ fieldset {
     background-size: 100%;    
 } 
 
+fieldset legend, fieldset label {
+    background-color: rgba(57, 195, 241, 0.89);  
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5;
+    border-radius: 5px;
+
+}
+
+.input {
+    width: 10vw;
+
+}
+
 main {
     display: flex;
-    background-color: #8753ea;
+    background: linear-gradient(to right, rgba(37, 75, 245, 0.781), rgb(41, 123, 247));
 }
+
 
 .custom-checkbox {
     position: relative;
@@ -109,13 +168,13 @@ main {
     position: absolute;
     left: 0;
     top: 0;
-    height: 25px;
-    width: 25px;
+    /* height: 12vw; */
+    /* width: 8rem; */
     background-color: #fff;
     border: 2px solid #aaa;
     border-radius: 5px;
     transition: 0.3s ease;
-    font-size: 20px;
+    /* font-size: 21vw; */
 }
 
 input[type="checkbox"]:checked + .checkmark {
@@ -128,8 +187,8 @@ input[type="checkbox"]:checked + .checkmark::after {
     position: absolute;
     left: 6px;
     top: 2px;
-    width: 6px;
-    height: 10px;
+    width: 8rem;
+    height: 8rem;
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
